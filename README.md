@@ -29,4 +29,8 @@ mv ~/Downloads/geckodriver /usr/local/bin/ # Move into path
 xattr -r -d com.apple.quarantine /usr/local/bin/geckodriver # Catalina issue workaround
 
 # Safari driver is built in. Go to Develop > Allow Remote Automation to enable
+
+# Running the tests
+#
+robot -d Results Tests/SermonPublisher.robot
 ```
