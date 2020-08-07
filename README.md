@@ -30,6 +30,15 @@ xattr -r -d com.apple.quarantine /usr/local/bin/geckodriver # Catalina issue wor
 
 # Safari driver is built in. Go to Develop > Allow Remote Automation to enable
 
+# Install Appium for testing on mobile
+#
+npm install -g appium
+npm install -g appium-doctor
+appium-doctor
+# Follow the doctors advice
+# Start appium
+appium --allow-insecure chromedriver_autodownload
+
 # Running the tests
 #
 robot -d Results Tests/SermonPublisher.robot
