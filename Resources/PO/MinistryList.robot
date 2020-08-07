@@ -3,10 +3,10 @@ Library  SeleniumLibrary
 
 *** Keywords ***
 Load
-  Go To  https://sermon-publish.herokuapp.com/
+  Go To  ${START_URL}
 
 Verify Page Loaded
   Wait Until Page Contains  Ministries
 
 Select Ministry
-  Click Element  css=body > div > div:nth-child(2) > div > a
+  Click Link  ministry-0

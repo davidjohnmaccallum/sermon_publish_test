@@ -11,23 +11,23 @@ Test Setup  Common.Begin Web Test
 Test Teardown  Common.End Web Test
 
 *** Variables ***
+${BROWSER} =  android
+${START_URL} =  https://sermon-publish.herokuapp.com/
 
 *** Test Cases ***
 User can listen to a sermon
-  Given MinistryList.Load
-  And MinistryList.Verify Page Loaded
-  And MinistryList.Select Ministry
-  And SermonList.Verify Page Loaded
-  And SermonList.Select Sermon
-  And Sermon.Verify Page Loaded
-  When Sermon.Play Sermon
-  Then Sermon.Verify Sermon Playing
+  MinistryList.Load
+  MinistryList.Verify Page Loaded
+  MinistryList.Select Ministry
+  SermonList.Verify Page Loaded
+  SermonList.Select Sermon
+  Sermon.Verify Page Loaded
+  Sermon.Play Sermon
+  Sermon.Verify Sermon Playing
 
 # Sermon list page loads
 
 # Sermon page loads
-
-# I can listen to a sermon
 
 # I can share a sermon
 
