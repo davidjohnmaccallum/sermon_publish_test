@@ -1,6 +1,6 @@
 # Sermon Publisher Tests
 
-This is a [Robot Framework](https://robotframework.org/) test suite.
+A [Robot Framework](https://robotframework.org/) integration test for the Sermon Publisher. The test runs via Selenium on desktop browsers and via Appium on mobile browsers.
 
 ## Getting Started
 
